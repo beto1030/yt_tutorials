@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-tier nav menu</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        nav ul {
+            background-color: #5E5D5D;
+            color: #D8D8D8;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+        }
+        nav ul > li {
+            list-style-type: none;
+            padding: 5px 25px;
+            position: relative;/* the first top level li tags need position: relative; // the sub li tags need position: absolute;*/
+        }
+        nav ul > li:hover {
+            background-color: #383838;
+        }
+        .sub-menu {
+            background-color: #383838;
+            position: absolute;
+            list-style-type: none;
+            /*margin-left: -26px;*/
+            width: 150px;
+            padding: 5px 0;
+            padding-left: 0px;
+            margin-left: -25px;
+        }
+        .sub-menu li {
+            padding-left: 25px;
+        }
+        /* The code below hides the sub menu and shows it when you hover the nav menu */
+        nav > ul > li > ul{
+            display: none;
+        }
+        nav > ul > li:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Languages
+                <ul class="sub-menu">
+                    <li>html</li>
+                </ul>
+            </li>
+            <li>Cars
+                <ul class="sub-menu">
+                    <li>Toyota</li>
+                    <li>Honda</li>
+                    <li>Ford</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
