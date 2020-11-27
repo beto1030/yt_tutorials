@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>/Users/albertoalvarado/Desktop/untitled\ folder 
+    <meta charset="UTF-8">
+    <title>2-tier menu that is not "lined up"</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        nav {
+            font-size: 20pt;
+            background: grey;
+            color: lightgrey;
+        }
+        nav > ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+        nav > ul > li {
+            position: relative;
+        }
+        nav > ul > li > ul {
+            position: absolute; 
+            list-style: none;
+            display: none;
+            background-color: grey;
+        }
+        nav > ul > li > ul > li {
+        }
+        nav > ul > li:hover ul {
+            display: block;
+        }
+        nav > ul > li > ul > li:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+   <nav>
+       <ul>
+           <li>Languages
+               <ul>
+                   <li>HTML</li>
+                   <li>CSS</li>
+                   <li>Javascript</li>
+               </ul>
+           </li>
+           <li>Cars
+               <ul>
+                   <li>Toyota</li>
+                   <li>Honda</li>
+                   <li>Ford</li>
+               </ul>
+           </li>
+       </ul>
+   </nav>
+</body>
+</html>

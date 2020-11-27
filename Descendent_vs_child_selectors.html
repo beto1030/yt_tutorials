@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Decendent vs. child selectors</title>
+    <style>
+        div > p {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>child</p>
+        <p>another child</p>
+        <p>another child</p>
+        <main>
+            <p>grand child</p>
+        </main>
+    </div>   
+</body>
+</html>

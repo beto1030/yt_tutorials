@@ -15,35 +15,58 @@
             font-size: 20px;
             display: flex;
             justify-content: space-around;
-            padding: 15px 0;
+            padding-top: 20px;
         }
-        nav ul > li {
+        nav > ul > li {
             list-style-type: none;
             padding: 5px 25px;
+           #padding-top: 15px;
+           #padding-bottom: 15px;
+           #padding-left: 25px;
+           #padding-right: 25px;
             position: relative;/* the first top level li tags need position: relative; // the sub li tags need position: absolute;*/
+            border-radius: 10px 10px 0 0;/* TL TR BR BL */
+            font-size: 20pt;
         }
         nav ul > li:hover {
             background-color: #383838;
         }
         .sub-menu {
+            display: block;
             background-color: #383838;
             position: absolute;
             list-style-type: none;
             /*margin-left: -26px;*/
             width: 150px;
-            padding: 5px 0;
+            #padding: 5px 0;
+            padding-top: 10px;
             padding-left: 0px;
             margin-left: -25px;
+            margin-top: 5px;
+            width: 200px;
+            opacity: 0;
+            transition: opacity .1s ease-in;
+            overflow: hidden;
+            padding-top: 10px;
+            border-radius: 0 10px 10px 10px;
         }
         .sub-menu li {
-            padding-left: 25px;
+            padding: 10px 25px;
         }
         /* The code below hides the sub menu and shows it when you hover the nav menu */
-        nav > ul > li > ul{
-            display: none;
-        }
         nav > ul > li:hover ul {
-            display: block;
+            #display: block;
+            border-radius: 0 10px 10px 10px;
+            opacity: 1;
+            height: auto;
+        }
+        
+        nav > ul > li > ul > li > a {
+            text-decoration: none;
+            color: #D8D8D8;
+        }
+        nav > ul > li > ul > li > a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -57,9 +80,9 @@
             </li>
             <li>Cars
                 <ul class="sub-menu">
-                    <li>Toyota</li>
-                    <li>Honda</li>
-                    <li>Ford</li>
+                    <li><a href="https://www.toyota.com/">Toyota</a></li>
+                    <li><a href="https://www.honda.com/">Honda</a></li>
+                    <li><a href="https://www.ford.com/">Ford</a></li>
                 </ul>
             </li>
         </ul>
