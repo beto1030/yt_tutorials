@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* header */
+/* header nav */
+header>nav>ul {
+    #border: solid 1px red;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: grey;
+    list-style: none;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+header>nav>ul>li {
+    #border: solid 1px blue;
+}
+header a {
+    text-decoration: none;
+    font-size: 20pt;
+    color: lightgrey;
+}
+
+/* main */
+main {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+
+}
+
+/* footer */
+footer p{
+    text-align: center; 
+}
