@@ -1,1 +1,1 @@
-# How to make a simple 2-tier navigation menu
+# Just made this readme file to practice using it
